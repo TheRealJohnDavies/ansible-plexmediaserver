@@ -3,7 +3,9 @@
 
 # Make sure Git is installed first
 - name: Installing Git package
-  package: git
+  package:
+    name: git
+    state: present
 
 # Clone the plexupdate utility repo
 - name: Clone plexupdate repository
