@@ -1,0 +1,25 @@
+---
+# tasks file for plexmediaserver
+
+# Make sure Git is installed first
+- name: Installing Git package
+  package: git
+
+# Clone the plexupdate utility repo
+- name: Clone plexupdate repository
+  git:
+    repo: "{{ plexupdate_repo }}"
+    dest: "{{ plexupdate_install_dir }}"
+
+# Configure plexupdate
+- name: Configuring plexupdate
+  template:
+    src: "{{ item }}.j2"
+    dest: "/{{ item }}"
+    force: yes
+  with_items: [ 'etc/plexupdate.conf' ]
+
+# Install Plex Media Server
+- name: Installing/updating Plex
+  command: "{{ plexupdate_install_dir }}/plexupdate.sh"
+

@@ -1,0 +1,50 @@
+galaxy_info:
+  author: John Davies
+  description: Installs and updates Plex Media Server using the plexupdate.sh script by Henric Andersson
+  company: 
+  license: GPLv2
+  min_ansible_version: 1.2
+  platforms:
+    - name: Debian
+      versions:
+        - jessie
+        - stretch
+        - buster
+    - name: EL
+      versions:
+        - 6
+        - 7
+    - name: Fedora
+      versions:
+        - 14
+        - 15
+        - 16
+        - 17
+        - 18
+        - 19
+        - 20
+        - 21
+        - 22
+        - 23
+        - 24
+        - 25
+        - 26
+    - name: Ubuntu
+      versions:
+        - lucid
+        - maverick
+        - natty
+        - oneiric
+        - precise
+        - quantal
+        - raring
+        - saucy
+        - trusty
+        - xenial
+  galaxy_tags:
+    - media
+    - plex
+    - plexmediaserver
+    - tv
+dependencies: []
+

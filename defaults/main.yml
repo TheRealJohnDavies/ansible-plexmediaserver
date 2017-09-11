@@ -1,0 +1,19 @@
+---
+# defaults file for plexmediaserver
+
+plexupdate_install_dir: '/opt/plexupdate'
+plexupdate_repo: 'https://github.com/mrworf/plexupdate.git'
+
+plexupdate_AUTODELETE:   'yes'
+plexupdate_AUTOINSTALL:  'yes'
+plexupdate_AUTOSTART:    'yes'
+plexupdate_AUTOUPDATE:   'yes'
+plexupdate_CHECKUPDATE:  'no'
+plexupdate_DOWNLOADDIR:  ''
+plexupdate_FORCE:        'no'
+plexupdate_NOTIFY:       'yes'
+plexupdate_PLEXSERVER:   '127.0.0.1'
+plexupdate_PLEXPORT:     '32400'
+plexupdate_PUBLIC:       'no'
+plexupdate_TOKEN:        ''
+
